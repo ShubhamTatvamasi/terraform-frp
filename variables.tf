@@ -4,10 +4,16 @@ variable "project_name" {
   default     = "frp"
 }
 
-variable "sg_ports" {
+variable "sg_tcp_ports" {
   type        = list(number)
-  description = "Security Group Ports"
-  default     = [22, 80, 443, 2222, 2379, 6443, 7000, 7500, 10000, 10001, 10250, 51831, 51832, 51833, 51834, 51835]
+  description = "Security Group TCP Ports"
+  default     = [22, 80, 443, 2222, 2379, 6443, 7000, 7500, 10250]
+}
+
+variable "sg_udp_ports" {
+  type        = list(number)
+  description = "Security Group UDP Ports"
+  default     = [10000, 10001, 51831, 51832, 51833, 51834, 51835]
 }
 
 variable "instance_type" {
