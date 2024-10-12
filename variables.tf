@@ -13,7 +13,7 @@ variable "sg_tcp_ports" {
 variable "sg_udp_ports" {
   type        = list(number)
   description = "Security Group UDP Ports"
-  default     = [10000, 10001, 51831, 51832, 51833, 51834, 51835]
+  default     = [1194, 10000, 10001, 51831, 51832, 51833, 51834, 51835]
 }
 
 variable "instance_type" {
