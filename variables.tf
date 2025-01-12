@@ -7,7 +7,7 @@ variable "project_name" {
 variable "sg_tcp_ports" {
   type        = list(number)
   description = "Security Group TCP Ports"
-  default     = [22, 25, 80, 110, 143, 443, 465, 587, 993, 995, 1194, 2222, 2379, 4190, 6443, 7000, 7500, 10250, 10051]
+  default     = [22, 25, 80, 110, 143, 443, 465, 587, 993, 995, 1194, 2222, 2379, 4190, 6443, 7000, 7500, 10250, 10050, 10051]
 }
 
 variable "sg_udp_ports" {
